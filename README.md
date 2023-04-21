@@ -3,6 +3,8 @@ Project: Mental Healthbot
 
 The Mental Health Chatbot is a conversational AI application designed to provide information, resources, and support related to mental health issues. The chatbot is built using Rasa and ChatGPT by OpenAI.
 
+**Conversation with ChatGPT**
+Throughout the development process, ChatGPT was consulted for guidance, suggestions, and problem-solving. The conversation thread can be found in Conversation Thread ChatGpt.
 
 Code Implementation
 =====================
@@ -33,6 +35,7 @@ Getting Started
 
 Prerequisites
 ----------------
+Visual Studio Code
 Python 3.8 or higher
 Rasa 2.8.9 or higher
 dotenv for Python
@@ -46,7 +49,7 @@ Installation
 2- Navigate to the project directory:
    cd Healthbot
    
-3- Create a virtual environment: Open a terminal/command prompt and navigate to your Rasa project directory.Then, run the following commands
+3- Create a virtual environment: Open a terminal/command prompt and navigate to your Rasa project directory.Then, run the following command:
    python -m venv venv
    
 4- Activate the virtual environment:
