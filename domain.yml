@@ -1,0 +1,115 @@
+version: "3.1"
+
+intents:
+  - greet
+  - thank
+  - affirm
+  - deny
+  - depression
+  - anxiety
+  - treatment_options
+  - therapy
+  - medication
+  - out_of_scope
+  - ask_about_depression
+  - ask_about_anxiety
+  - ask_about_coping_strategies
+  - ask_about_professional_help
+  - ask_about_self_help_resources
+  - ask_about_support_groups
+  - ask_about_emergency_resources
+  - fallback
+  - goodbye
+
+entities:
+  - mental_health_professional
+
+
+slots:
+  mental_health_professional:
+    type: text
+    mappings:
+      - type: from_text
+
+
+responses:
+  
+  utter_greet:
+  - text: "Hello! I'm here to help you with questions related to depression and anxiety. How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! If you have any more questions in the future, don't hesitate to ask."
+
+  utter_thank:
+  - text: "You're welcome! If you have more questions, don't hesitate to ask."
+  
+  utter_depression_definition:
+  - text: "Depression is a mental health disorder characterized by persistent feelings of sadness, hopelessness, and a lack of interest or pleasure in activities. It can also cause physical symptoms such as changes in appetite, sleep disturbances, and fatigue."
+
+  utter_anxiety_definition:
+  - text: "Anxiety is a normal and often healthy emotion. However, when a person regularly feels disproportionate levels of anxiety, it might become a medical disorder. Anxiety disorders form a category of mental health diagnoses that lead to excessive nervousness, fear, apprehension, and worry."
+
+  utter_depression_symptoms:
+  - text: >-
+      The symptoms of depression can vary from person to person, but they generally include:\n
+      1. Persistent sad or empty mood\n
+      2. Loss of interest or pleasure in activities\n
+      3. Changes in appetite or weight\n
+      4. Sleep disturbances\n
+      5. Fatigue or loss of energy\n
+      6. Difficulty concentrating or making decisions\n
+      7. Feelings of worthlessness or excessive guilt\n
+      8. Thoughts of death or suicide
+
+  utter_anxiety_symptoms:
+  - text: >-
+      Common symptoms of anxiety include:\n
+      1. Excessive worry and fear about daily activities or events\n
+      2. Restlessness or feeling on edge\n
+      3. Fatigue or difficulty sleeping\n
+      4. Experiencing physical symptoms such as sweating, trembling, rapid heart rate, or shortness of breath\n
+      5. Difficulty concentrating or staying focused\n
+      6. Irritability and easily getting agitated\n
+      7. Avoiding certain situations or activities due to irrational fears or worries\n
+      8. Having panic attacks that may include chest pain, sweating, a pounding heart, or feeling like you're choking
+
+  utter_treatment_options:
+  - text: >-
+      Treatment options for depression and anxiety can include a combination of therapy, medication, and lifestyle changes. Some common treatment options are:\n
+      1. Psychotherapy (such as cognitive-behavioral therapy, interpersonal therapy, or psychodynamic therapy)\n
+      2. Medications (such as antidepressants or anti-anxiety medications)\n
+      3. Support groups\n
+      4. Self-help techniques (such as deep breathing exercises, meditation, or mindfulness)\n
+      5. Regular exercise, a balanced diet, and proper sleep
+  
+  utter_therapy:
+    - text: "Therapy, or psychotherapy, is a process where a mental health professional works with a client to help them understand and cope with their emotions, thoughts, and behaviors. There are many types of therapy, including cognitive-behavioral therapy (CBT), psychodynamic therapy, and interpersonal therapy. Therapy can be an effective treatment for a variety of mental health issues, including depression and anxiety."
+  utter_medication:
+    - text: "Medication can be an important part of treatment for some mental health conditions, including depression and anxiety. Antidepressants, anti-anxiety medications, and mood stabilizers are some common types of medications used to treat mental health issues. It's important to work with a healthcare professional to determine the best medication and dosage for your specific needs."
+  utter_coping_strategies:
+    - text: "Coping strategies are techniques that help individuals manage stress and difficult emotions. Some common coping strategies for mental health issues include practicing relaxation techniques, engaging in regular exercise, maintaining a healthy diet, getting adequate sleep, connecting with supportive friends and family, and seeking professional help when needed."
+  utter_fallback:
+    - text: "I'm sorry, but I'm not able to answer that question. My expertise is limited to mental health-related topics. If you have a question about depression, anxiety, or mental health in general, please feel free to ask."
+  utter_iamabot:
+    - text: "I am a chatbot designed to help with mental health inquiries. My purpose is to assist you in finding relevant information and resources."
+  utter_default:
+  - text: "I'm sorry, I didn't quite understand that. Can you please rephrase your question or ask something else?"
+  utter_out_of_scope:
+  - text: "I'm here to help with mental health-related questions. Please ask a question related to mental health."
+  
+actions:
+  - utter_greet
+  - utter_goodbye
+  - action_fetch_depression_info
+  - action_fetch_anxiety_info
+  - action_fetch_coping_strategies
+  - action_provide_professional_help_info
+  - action_fetch_self_help_resources
+  - action_fetch_support_groups_info
+  - action_default_fallback
+  - action_default_ask_affirmation
+  - action_provide_emergency_resources_info
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
