@@ -1,0 +1,52 @@
+version: "3.1"
+rules:
+
+  - rule: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye to the user
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Provide information about depression
+    steps:
+      - intent: ask_about_depression
+      - action: action_fetch_depression_info
+
+  - rule: Provide information about anxiety
+    steps:
+      - intent: ask_about_anxiety
+      - action: action_fetch_anxiety_info
+
+  - rule: Provide information about coping strategies
+    steps:
+      - intent: ask_about_coping_strategies
+      - action: action_fetch_coping_strategies
+
+  - rule: Provide information about professional help
+    steps:
+      - intent: ask_about_professional_help
+      - action: action_provide_professional_help_info
+
+  - rule: Provide information about self-help resources
+    steps:
+      - intent: ask_about_self_help_resources
+      - action: action_fetch_self_help_resources
+
+  - rule: Provide information about support groups
+    steps:
+      - intent: ask_about_support_groups
+      - action: action_fetch_support_groups_info
+
+  - rule: Provide information about emergency resources
+    steps:
+      - intent: ask_about_emergency_resources
+      - action: action_provide_emergency_resources_info
+
+  - rule: Fallback rule
+    steps:
+      - intent: nlu_fallback
+      - action: action_default_fallback

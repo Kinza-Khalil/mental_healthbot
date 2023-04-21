@@ -1,0 +1,82 @@
+version: "3.1"
+stories:
+- story: Greeting and asking about depression
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_depression
+  - action: action_fetch_depression_info
+
+- story: Greeting and asking about anxiety
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_about_anxiety
+  - action: action_fetch_anxiety_info
+
+- story: Thank
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- story: Depression information
+  steps:
+  - intent: depression
+  - action: action_fetch_depression_info
+
+- story: Anxiety information
+  steps:
+  - intent: anxiety
+  - action: action_fetch_anxiety_info
+
+- story: Treatment options
+  steps:
+  - intent: treatment_options
+  - action: utter_treatment_options
+
+- story: Therapy information
+  steps:
+  - intent: therapy
+  - action: utter_therapy
+
+- story: Medication information
+  steps:
+  - intent: medication
+  - action: utter_medication
+
+- story: Out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- story: Coping strategies
+  steps:
+  - intent: ask_about_coping_strategies
+  - action: action_fetch_coping_strategies
+
+- story: Professional help
+  steps:
+  - intent: ask_about_professional_help
+  - action: action_provide_professional_help_info
+
+- story: Self-help resources
+  steps:
+  - intent: ask_about_self_help_resources
+  - action: action_fetch_self_help_resources
+
+- story: Support groups
+  steps:
+  - intent: ask_about_support_groups
+  - action: action_fetch_support_groups_info
+
+- story: Emergency resources
+  steps:
+  - intent: ask_about_emergency_resources
+  - action: action_provide_emergency_resources_info
+
+- story: Fallback and goodbye
+  steps:
+  - intent: fallback
+  - action: utter_fallback
+  - intent: goodbye
+  - action: utter_goodbye

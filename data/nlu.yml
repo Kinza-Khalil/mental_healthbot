@@ -1,0 +1,157 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey
+    - Hi there
+    - Greetings
+
+- intent: thank
+  examples: |
+    - Thanks
+    - Thank you
+    - Thanks a lot
+    - I appreciate it
+    - Thank you so much
+    - Many thanks
+
+- intent: affirm
+  examples: |
+    - Yes
+    - Definitely
+    - Sure
+    - Absolutely
+    - Of course
+
+- intent: deny
+  examples: |
+    - No
+    - Not really
+    - I don't think so
+    - I'm not sure
+
+- intent: depression
+  examples: |
+    - Tell me about depression
+    - I feel depressed
+    - I think I have depression
+    - What is depression?
+    - Can you explain depression?
+    - I want to know more about depression
+    - How do I know if I have depression?
+    - What are the signs of depression?
+
+- intent: anxiety
+  examples: |
+    - I have anxiety
+    - I am constantly worried
+    - Tell me about anxiety 
+    - What is anxiety?
+    - Can you explain anxiety?
+    - I want to know more about anxiety
+    - How do I know if I have anxiety?
+    - What are the signs of anxiety?
+
+- intent: treatment_options
+  examples: |
+    - How can I treat depression?
+    - What are the treatment options for anxiety?
+    - How can I treat my mental health issues?
+    - What are some ways to manage depression and anxiety?
+    - How can I improve my mental health?
+
+- intent: therapy
+  examples: |
+    - What is therapy?
+    - How does therapy work?
+    - What types of therapy are there?
+    - Can therapy help with depression?
+    - Can therapy help with anxiety?
+    - How can I find a therapist?
+
+- intent: medication
+  examples: |
+    - What is medication?
+    - How does medication work?
+    - What types of medication are there?
+    - Can medication help with depression?
+    - Can medication help with anxiety?
+    - How can I find the right medication for me?
+
+- intent: ask_about_depression
+  examples: |
+    - What are the symptoms of depression?
+    - How do I know if I have depression?
+    - Tell me more about depression
+    - Signs of depression
+
+- intent: ask_about_anxiety
+  examples: |
+    - What are the symptoms of anxiety?
+    - How do I know if I have anxiety?
+    - Tell me more about anxiety
+    - Signs of anxiety
+
+- intent: ask_about_coping_strategies
+  examples: |
+    - What are some coping strategies for mental health issues?
+    - How can I deal with depression or anxiety?
+    - How can I cope with depression?
+    - What are some coping strategies for anxiety?
+    - How can I manage my stress?
+    - What can I do to feel better?
+    - How can I deal with my emotions?
+    - What are some self-care tips for mental health?
+    - Tips for managing mental health
+
+- intent: ask_about_professional_help
+  examples: |
+    - How do I seek professional help for mental health?
+    - What type of professional should I see for my mental health?
+    - How can I find a therapist or counselor?
+    - How to get help for mental health issues
+
+- intent: ask_about_self_help_resources
+  examples: |
+    - What are some good self-help resources for mental health?
+    - Can you recommend any books or websites about mental health?
+    - Self-help for depression or anxiety
+
+- intent: ask_about_support_groups
+  examples: |
+    - Where can I find support groups for mental health?
+    - Are there any online communities for mental health support?
+    - How can I connect with others who are going through similar experiences?
+
+- intent: ask_about_emergency_resources
+  examples: |
+    - What should I do if I'm in a mental health crisis?
+    - Are there any hotlines I can call for help?
+    - Emergency mental health resources
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+    - Thanks, bye
+
+- intent: fallback
+  examples: |
+    - I don't understand
+    - Can you please rephrase that?
+    - I'm not sure what you're asking
+    - Could you please provide more information?
+
+- intent: out_of_scope
+  examples: |
+    - What's the weather like today?
+    - How do I cook pasta?
+    - What's the latest news?
+    - Can you recommend a movie?
+    - What time is it?
+    - How old are you?
+    - How are you?
+   
