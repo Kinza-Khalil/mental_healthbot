@@ -72,15 +72,16 @@ To properly set up and use an API key in this project, follow these instructions
 
 2- Request an API key: Once logged in, navigate to the API section and request an API key. The process may vary depending on the API provider. Make sure to read their documentation on how to obtain an API key.
 
-3- Add the API key to the .env file: Open the .env file and add the API key as an environment variable. The format should be:
-API_KEY=your_api_key_here
+3- Create a .env file: In your project directory, create a new file named .env. This file will store sensitive information like the API key.
 
+4- Add the API key to the .env file: Open the .env file and add the API key as an environment variable. The format should be:
+API_KEY=your_api_key_here
 Replace your_api_key_here with the actual API key you obtained from the API provider.
 
-4- Install required libraries: Make sure you have installed all the required libraries, including python-dotenv. You can install it using the following command:
+5- Install required libraries: Make sure you have installed all the required libraries, including python-dotenv. You can install it using the following command:
 pip install python-dotenv
 
-5- Load the API key in your code: The provided Python code already includes the necessary lines to load the environment variables from the .env file. Ensure that your .env file is properly set up and contains the correct API key.
+6- Load the API key in your code: The provided Python code already includes the necessary lines to load the environment variables from the .env file. Ensure that your .env file is properly set up and contains the correct API key.
     
 Usage
 --------
